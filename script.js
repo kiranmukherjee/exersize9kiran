@@ -1,15 +1,13 @@
-var test = "test";
-    document.getElementById("input").value = test;
+let number =[7];
 
-
-let button1 = document.getElementById("inputbutton")
-
-submit.onclick = test()
-
-function test(){
-    values = ["dark","light","dusk","night"];
-    for (i=0; i<values.length; i++) {}
-    console.log("You chose " + test);
-}         
-
-
+document.getElementById("submission").addEventListener("input", function(i){                           
+    for(i = 0;i<number.length;i++){
+    if (number[i] ==  document.getElementById("submission").value){
+        console.log("correct");
+        document.getElementById("submission")="You guessed the lucky number!"
+    } else {
+        console.log("incorrect");
+        document.getElementById("submission")="This is not the lucky number!"
+  }
+}   
+});
